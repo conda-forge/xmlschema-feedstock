@@ -1,7 +1,7 @@
 {% set name = "xmlschema" %}
-{% set version = "0.9.13" %}
+{% set version = "0.9.18" %}
 {% set file_ext = "tar.gz" %}
-{% set sha256 = "5ce11a4b214f7f67962d6a5abff11e7772bc7ecdd70058064c750e623a5c4c53" %}
+{% set sha256 = "976e4cb5a294916c3e1fc15d12791a6413fb81b773b5c25f86bde751de1188da" %}
 
 package:
   name: {{ name }}
@@ -27,7 +27,7 @@ requirements:
 test:
   imports:
     - xmlschema
-    - xmlschema.components
+    - xmlschema.validators
     - xmlschema.tests
 
 about:
