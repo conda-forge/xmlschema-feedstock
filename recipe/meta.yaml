@@ -21,11 +21,13 @@ requirements:
   build:
     - python
     - pip
-    - elementpath
+    - elementpath>=1.0.6
+    - defusedxml>=0.5
 
   run:
     - python
-    - elementpath
+    - elementpath>=1.0.6
+    - defusedxml>=0.5
 
 test:
   imports:
