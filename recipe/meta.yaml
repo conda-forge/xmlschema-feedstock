@@ -1,7 +1,7 @@
 {% set name = "xmlschema" %}
-{% set version = "0.9.26" %}
+{% set version = "0.9.28" %}
 {% set file_ext = "tar.gz" %}
-{% set sha256 = "e6baf73fdb9bbbc32aec484179e4c21fb9c9ec21638f37118af1e14f7176819d" %}
+{% set sha256 = "11d04b78be244725891ee9668311cbbcd29e1f74447a1e585dc98d5daea773b3" %}
 
 package:
   name: {{ name }}
@@ -21,11 +21,13 @@ requirements:
   build:
     - python
     - pip
-    - elementpath
+    - elementpath>=1.0.6
+    - defusedxml>=0.5
 
   run:
     - python
-    - elementpath
+    - elementpath>=1.0.6
+    - defusedxml>=0.5
 
 test:
   imports:
