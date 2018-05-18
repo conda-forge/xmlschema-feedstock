@@ -9,25 +9,32 @@ Feedstock license: BSD 3-Clause
 
 Summary: An XML Schema validator and decoder
 
-An implementation of XML Schema <http://www.w3.org/2001/XMLSchema> for
-Python (supports versions 2.7 and Python 3.3+).
+This is an implementation of XML Schema for Python (supports versions 2.7
+and Python 3.3+).
 
-The xmlschema library includes the following features: building of XML
-schema objects from XSD files; validation of XML instances with XSD
-schemas; decoding of XML data into Python data structures; an XPath based
-API for finding schema's elements and attributes; support of XSD
-validation modes.
+This library arises from the needs of a solid Python layer for processing
+XML Schema based files for MaX (Materials design at the Exascale) European
+project. A significant problem is the encoding and the decoding of the XML
+data files produced by different simulation software. Another important
+requirement is the XML data validation, in order to put the produced data
+under control. The lack of a suitable alternative for Python in the
+schema-based decoding of XML data has led to build this library. Obviously
+this library can be useful for other cases related to XML Schema based
+processing, not only for the original scope.
 
 
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/xmlschema-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xmlschema-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/xmlschema-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/xmlschema-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xmlschema/badges/version.svg)](https://anaconda.org/conda-forge/xmlschema)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xmlschema/badges/downloads.svg)](https://anaconda.org/conda-forge/xmlschema)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xmlschema-green.svg)](https://anaconda.org/conda-forge/xmlschema) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xmlschema.svg)](https://anaconda.org/conda-forge/xmlschema) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xmlschema.svg)](https://anaconda.org/conda-forge/xmlschema) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xmlschema.svg)](https://anaconda.org/conda-forge/xmlschema) |
 
 Installing xmlschema
 ====================
