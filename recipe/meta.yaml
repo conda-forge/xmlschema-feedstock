@@ -1,7 +1,7 @@
 {% set name = "xmlschema" %}
-{% set version = "0.9.31" %}
+{% set version = "1.0.1" %}
 {% set file_ext = "tar.gz" %}
-{% set sha256 = "f184f4a81d1dd3973125cf7bb06aa82dd92f8b392a2ae9c7def90f5453de6b22" %}
+{% set sha256 = "e20d02fed2e516d91c23bc723e78f3bdc50a63e684d0a5c6e2a1c86f87398a03" %}
 
 package:
   name: {{ name }}
