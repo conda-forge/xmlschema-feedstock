@@ -30,6 +30,8 @@ requirements:
 test:
   imports:
     - xmlschema
+  commands:
+    - python -m xmlschema.tests.test_all
 
 about:
   home: https://github.com/brunato/xmlschema
