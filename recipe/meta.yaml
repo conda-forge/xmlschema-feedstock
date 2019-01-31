@@ -21,19 +21,15 @@ requirements:
   build:
     - python
     - pip
-    - elementpath>=1.0.6
-    - defusedxml>=0.5
+    - elementpath>=1.1.2
 
   run:
     - python
-    - elementpath>=1.0.6
-    - defusedxml>=0.5
+    - elementpath>=1.1.2
 
 test:
   imports:
     - xmlschema
-    - xmlschema.validators
-    - xmlschema.tests
 
 about:
   home: https://github.com/brunato/xmlschema
