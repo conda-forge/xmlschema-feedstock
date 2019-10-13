@@ -1,7 +1,7 @@
 {% set name = "xmlschema" %}
-{% set version = "1.0.14" %}
+{% set version = "1.0.15" %}
 {% set file_ext = "tar.gz" %}
-{% set sha256 = "249003f3f0d1bff0162b3564d1c647971e2268abb9e662a951c127abd70e09e8" %}
+{% set sha256 = "aaa72705aa16477ca2e2522b1a982f8343d3c8751faa7f0fd42720230d6dd066" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
