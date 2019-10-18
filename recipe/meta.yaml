@@ -21,11 +21,11 @@ requirements:
   build:
     - python
     - pip
-    - elementpath>=1.1.2
+    - elementpath ~=1.3
 
   run:
     - python
-    - elementpath>=1.1.2
+    - elementpath ~=1.3
 
 test:
   imports:
