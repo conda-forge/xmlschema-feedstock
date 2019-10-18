@@ -34,7 +34,7 @@ test:
     - python -m xmlschema.tests.test_all
 
 about:
-  home: https://github.com/brunato/xmlschema
+  home: https://github.com/sissaschool/xmlschema
   license: MIT
   license_family: MIT
   license_file: LICENSE
