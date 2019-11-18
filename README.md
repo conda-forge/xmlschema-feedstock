@@ -1,7 +1,7 @@
 About xmlschema
 ===============
 
-Home: https://github.com/brunato/xmlschema
+Home: https://github.com/sissaschool/xmlschema
 
 Package license: MIT
 
