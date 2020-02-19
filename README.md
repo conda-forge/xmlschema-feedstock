@@ -9,8 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: An XML Schema validator and decoder
 
-This is an implementation of XML Schema for Python (supports versions 2.7
-and Python 3.5+).
+This is an implementation of XML Schema for Python 3.5+.
 
 This library arises from the needs of a solid Python layer for processing
 XML Schema based files for MaX (Materials design at the Exascale) European
