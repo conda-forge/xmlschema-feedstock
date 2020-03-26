@@ -1,19 +1,16 @@
 {% set name = "xmlschema" %}
 {% set version = "1.1.1" %}
-{% set file_ext = "tar.gz" %}
-{% set sha256 = "43d4d60b032ddbe484c562d65fcdba34e85d7c3ad59f2490795740b5a579c540" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ file_ext }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 43d4d60b032ddbe484c562d65fcdba34e85d7c3ad59f2490795740b5a579c540
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
