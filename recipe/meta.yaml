@@ -25,6 +25,8 @@ requirements:
     - elementpath =1.4
 
 test:
+  requires:
+    - lxml
   source_files:
     - tests
   imports:
