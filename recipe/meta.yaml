@@ -18,11 +18,11 @@ requirements:
   build:
     - python >=3.5
     - pip
-    - elementpath =1.4
+    - elementpath =2.0
 
   run:
     - python >=3.5
-    - elementpath =1.4
+    - elementpath =2.0
 
 test:
   requires:
