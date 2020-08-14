@@ -5,7 +5,7 @@ Home: https://github.com/sissaschool/xmlschema
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An XML Schema validator and decoder
 
