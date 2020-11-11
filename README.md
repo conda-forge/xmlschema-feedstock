@@ -5,9 +5,11 @@ Home: https://github.com/sissaschool/xmlschema
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xmlschema-feedstock/blob/master/LICENSE.txt)
 
 Summary: An XML Schema validator and decoder
+
+Development: https://github.com/sissaschool/xmlschema
 
 This is an implementation of XML Schema for Python 3.5+.
 
