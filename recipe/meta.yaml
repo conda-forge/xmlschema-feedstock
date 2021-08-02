@@ -1,5 +1,5 @@
 {% set name = "xmlschema" %}
-{% set version = "1.6.4" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 577ac82b89f6de354fb59abb544a77a41a282763ecb29843ea9e113693080c58
+  sha256: dd3917141a98f3cebb91dd2cfd0ec5476a8ac5073cea52dfe3050c5c04891169
 
 build:
   number: 0
