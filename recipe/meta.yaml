@@ -26,13 +26,19 @@ requirements:
 
 test:
   requires:
+    - jinja2
     - lxml
+    - memory_profiler
+    - mypy
+    - pytest
   source_files:
     - tests
   imports:
     - xmlschema
   commands:
-    - python tests/test_all.py
+    # Both commands work
+    # - python tests/test_all.pyp
+    - pytest tests
 
 about:
   home: https://github.com/sissaschool/xmlschema
