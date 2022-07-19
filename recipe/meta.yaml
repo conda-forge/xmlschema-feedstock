@@ -28,15 +28,12 @@ test:
   requires:
     - jinja2
     - lxml
-    - pytest
   source_files:
     - tests
   imports:
     - xmlschema
   commands:
-    # Both commands work
-    # - python tests/test_all.pyp
-    - pytest tests
+    - python tests/test_all.py
 
 about:
   home: https://github.com/sissaschool/xmlschema
