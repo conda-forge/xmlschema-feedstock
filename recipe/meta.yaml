@@ -28,8 +28,6 @@ test:
   requires:
     - jinja2
     - lxml
-    - memory_profiler
-    - mypy
     - pytest
   source_files:
     - tests
