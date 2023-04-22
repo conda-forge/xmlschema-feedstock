@@ -10,7 +10,7 @@ source:
   sha256: d21ba86af4432720231fb4b40f1205fa75fd718d6856ec3b8118984de31c225b
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - elementpath >=3.0.0,<4
+    - elementpath <5.0.0,>=4.0.0
 
   run:
     - python >=3.7
@@ -28,12 +28,14 @@ test:
   requires:
     - jinja2
     - lxml
+    - pip
   source_files:
     - tests
   imports:
     - xmlschema
   commands:
     - python tests/test_all.py
+    - pip check
 
 about:
   home: https://github.com/sissaschool/xmlschema
