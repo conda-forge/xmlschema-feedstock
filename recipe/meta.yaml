@@ -1,5 +1,5 @@
 {% set name = "xmlschema" %}
-{% set version = "2.2.3" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d21ba86af4432720231fb4b40f1205fa75fd718d6856ec3b8118984de31c225b
+  sha256: c2d583f7d07c6bac157d075889d15c128f34afdc79e4f70b4fb3c6adedc59bfe
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -18,11 +18,11 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - elementpath <5.0.0,>=4.0.0
+    - elementpath <5.0.0,>=4.1.2
 
   run:
     - python >=3.7
-    - elementpath <5.0.0,>=4.0.0
+    - elementpath <5.0.0,>=4.1.2
 
 test:
   requires:
