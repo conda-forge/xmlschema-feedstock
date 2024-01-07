@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - elementpath <5.0.0,>=4.1.5
 
   run:
-    - python >=3.7
+    - python >=3.8
     - elementpath <5.0.0,>=4.1.5
 
 test:
