@@ -44,7 +44,7 @@ about:
   license_file: LICENSE
   summary: An XML Schema validator and decoder
   description: |
-    This is an implementation of XML Schema for Python 3.7+.
+    This is an implementation of XML Schema for Python 3.8+.
 
     This library arises from the needs of a solid Python layer for processing
     XML Schema based files for MaX (Materials design at the Exascale) European
