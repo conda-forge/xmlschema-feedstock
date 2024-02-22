@@ -1,5 +1,5 @@
 {% set name = "xmlschema" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb24a5f4738e49d85d9eb03a2b5af26bbbbfdb055517ad953d98925094b8c026
+  sha256: b2526e91695905aa62d4aa2b68349565a168fedf88ada0005f5e0dd21da9734b
 
 build:
   number: 0
@@ -18,11 +18,11 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - elementpath <5.0.0,>=4.1.5
+    - elementpath <5.0.0,>=4.3.0
 
   run:
     - python >=3.8
-    - elementpath <5.0.0,>=4.1.5
+    - elementpath <5.0.0,>=4.3.0
 
 test:
   requires:
