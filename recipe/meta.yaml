@@ -18,11 +18,11 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - elementpath <5.0.0,>=4.3.0
+    - elementpath <5.0.0,>=4.4.0
 
   run:
     - python >=3.8
-    - elementpath <5.0.0,>=4.3.0
+    - elementpath <5.0.0,>=4.4.0
 
 test:
   requires:
