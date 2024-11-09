@@ -1,34 +1,38 @@
 {% set name = "xmlschema" %}
-{% set version = "3.4.2" %}
+{% set version = "3.4.3" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d35023ea504ea46127302d1297b046d023b96fec5fe4b4b690534ea85b5e9bf8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0c638dac81c7d6c9da9a8d7544402c48cffe7ee0e13cc47fc0c18794d1395dfb
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
+    - setuptools
     - elementpath <5.0.0,>=4.4.0
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - elementpath <5.0.0,>=4.4.0
 
 test:
   requires:
+    - python {{ python_min }}
     - jinja2
     - lxml
     - pip
+    - setuptools
   source_files:
     - tests
   imports:
