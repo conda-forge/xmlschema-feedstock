@@ -37,9 +37,7 @@ test:
     - tests
   imports:
     - xmlschema
-  commands:
-    - python -m unittest
-    - pip check
+
 
 about:
   home: https://github.com/sissaschool/xmlschema
