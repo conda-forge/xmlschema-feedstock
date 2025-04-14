@@ -38,7 +38,7 @@ test:
   imports:
     - xmlschema
   commands:
-    - python tests/test_all.py
+    - python tests/run_all_tests.py
     - pip check
 
 about:
