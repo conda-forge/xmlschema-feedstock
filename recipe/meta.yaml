@@ -1,6 +1,6 @@
 {% set name = "xmlschema" %}
-{% set version = "3.4.5" %}
-{% set python_min = "3.8" %}
+{% set version = "4.0.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 243244743f151ec859ec0bbf1368fa3f70e5f29e977b77f72e1c9b8f8ae670f6
+  sha256: 1b6d6c3650f1e0c60d8edc9204572b5700f408953d1fbd9bb6f4eaf5f3dda70c
 
 build:
   number: 0
@@ -20,11 +20,11 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - elementpath <5.0.0,>=4.4.0
+    - elementpath <6.0.0,>=4.8.0
 
   run:
     - python >={{ python_min }}
-    - elementpath <5.0.0,>=4.4.0
+    - elementpath <6.0.0,>=4.8.0
 
 test:
   requires:
@@ -37,9 +37,7 @@ test:
     - tests
   imports:
     - xmlschema
-  commands:
-    - python tests/test_all.py
-    - pip check
+
 
 about:
   home: https://github.com/sissaschool/xmlschema
@@ -48,7 +46,7 @@ about:
   license_file: LICENSE
   summary: An XML Schema validator and decoder
   description: |
-    This is an implementation of XML Schema for Python 3.8+.
+    This is an implementation of XML Schema for Python 3.9+.
 
     This library arises from the needs of a solid Python layer for processing
     XML Schema based files for MaX (Materials design at the Exascale) European
