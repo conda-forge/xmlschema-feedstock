@@ -1,5 +1,5 @@
 {% set name = "xmlschema" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88ac771cf94d5fc6bbd1a763db8c157f3d683ad23120b0d0b8c46fe4537f2adf
+  sha256: b1f88c53493b2e75471977cbf218d939b872d0c7046bb63d48cc219fa7e241b9
 
 build:
   number: 0
