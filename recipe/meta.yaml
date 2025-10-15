@@ -20,11 +20,11 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - elementpath <6.0.0,>=4.8.0
+    - elementpath <6.0.0,>=5.0.1
 
   run:
     - python >={{ python_min }}
-    - elementpath <6.0.0,>=4.8.0
+    - elementpath <6.0.0,>=5.0.1
 
 test:
   requires:
