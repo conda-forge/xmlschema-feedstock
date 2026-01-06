@@ -1,6 +1,6 @@
 {% set name = "xmlschema" %}
 {% set version = "4.3.0" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name }}
@@ -46,7 +46,7 @@ about:
   license_file: LICENSE
   summary: An XML Schema validator and decoder
   description: |
-    This is an implementation of XML Schema for Python 3.9+.
+    This library is an implementation of XML Schema for Python.
 
     This library arises from the needs of a solid Python layer for processing
     XML Schema based files for MaX (Materials design at the Exascale) European
