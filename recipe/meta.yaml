@@ -1,6 +1,6 @@
 {% set name = "xmlschema" %}
-{% set version = "4.2.0" %}
-{% set python_min = "3.9" %}
+{% set version = "4.3.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1f88c53493b2e75471977cbf218d939b872d0c7046bb63d48cc219fa7e241b9
+  sha256: 174c531dd869cd29bf2d1203603d9e619bddf168d6289725738914c96c80936e
 
 build:
   number: 0
@@ -46,7 +46,7 @@ about:
   license_file: LICENSE
   summary: An XML Schema validator and decoder
   description: |
-    This is an implementation of XML Schema for Python 3.9+.
+    This library is an implementation of XML Schema for Python.
 
     This library arises from the needs of a solid Python layer for processing
     XML Schema based files for MaX (Materials design at the Exascale) European
