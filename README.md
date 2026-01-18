@@ -11,7 +11,7 @@ Summary: An XML Schema validator and decoder
 
 Development: https://github.com/sissaschool/xmlschema
 
-This is an implementation of XML Schema for Python 3.9+.
+This library is an implementation of XML Schema for Python.
 
 This library arises from the needs of a solid Python layer for processing
 XML Schema based files for MaX (Materials design at the Exascale) European
